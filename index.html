@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElpTodo v-1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="head">
+            <h1 class="title">
+                Eat the <span class="elephant">elephant</span> in pieces.
+            </h1>
+            <div action="" class="add-task">
+                <input class="add-task-input" type="text" placeholder="Type new task">
+                <button class="add-task-btn">+Add Task</button>
+            </div>
+        </div>
+
+        <div class="task-inbox">
+            <!-- <div class="task-cart">
+                <div class="cart-top">
+                    <h3 class="cart-title">
+                        Elephant
+                    </h3>
+                    <div class="progress-percent">
+                        78%
+                    </div>
+                </div>
+                <div id="createdDate" class="date-cart">21.12.2023</div>
+                <progress id="progressBar" class="progress-bar" value="35" max="100"></progress>
+                <div class="subtask-inbox">
+                    <label class="checkbox subtask">
+                        <input type="checkbox" />
+                        <div class="checkbox-checkmark"></div>
+                        <input type="text" class="checkbox-body" placeholder="Type subtask">
+                    </label>
+
+                </div>
+                <div class="cart-bottom">
+                    <button class="add-subtask">New Task</button>
+                    <div class="cart-button">
+                        <button class="change-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M16 4.19201C16.0006 4.08672 15.9804 3.98235 15.9406 3.88488C15.9008 3.78741 15.8421 3.69876 15.768 3.62401L12.376 0.232013C12.3012 0.157868 12.2126 0.0992079 12.1151 0.0593963C12.0176 0.0195847 11.9133 -0.000595342 11.808 1.33714e-05C11.7027 -0.000595342 11.5983 0.0195847 11.5009 0.0593963C11.4034 0.0992079 11.3147 0.157868 11.24 0.232013L8.976 2.49601L0.232013 11.24C0.157868 11.3147 0.0992079 11.4034 0.0593963 11.5009C0.0195847 11.5983 -0.000595342 11.7027 1.33714e-05 11.808V15.2C1.33714e-05 15.4122 0.0842987 15.6156 0.234328 15.7657C0.384356 15.9157 0.587839 16 0.800012 16H4.19201C4.30395 16.0061 4.41592 15.9886 4.52066 15.9486C4.6254 15.9086 4.72057 15.8471 4.8 15.768L13.496 7.024L15.768 4.80001C15.841 4.72247 15.9005 4.63323 15.944 4.53601C15.9517 4.47224 15.9517 4.40777 15.944 4.34401C15.9477 4.30677 15.9477 4.26925 15.944 4.23201L16 4.19201ZM3.86401 14.4H1.60001V12.136L9.544 4.19201L11.808 6.456L3.86401 14.4ZM12.936 5.328L10.672 3.06401L11.808 1.93601L14.064 4.19201L12.936 5.328Z"
+                                    fill="#F5F5F5" />
+                            </svg>
+                        </button>
+                        <button class="delete-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"
+                                fill="none">
+                                <path
+                                    d="M12 0.888889H9L8.14286 0H3.85714L3 0.888889H0V2.66667H12M0.857143 14.2222C0.857143 14.6937 1.03775 15.1459 1.35925 15.4793C1.68074 15.8127 2.11677 16 2.57143 16H9.42857C9.88323 16 10.3193 15.8127 10.6408 15.4793C10.9622 15.1459 11.1429 14.6937 11.1429 14.2222V3.55556H0.857143V14.2222Z"
+                                    fill="#04DEDE" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="notask">
+                <div class="notask-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="171" height="170" viewBox="0 0 171 170" fill="none">
+                        <g clip-path="url(#clip0_118_385)">
+                            <path
+                                d="M163.195 73.5392C159.115 39.0669 136.141 24.2061 97.4142 24.2061C95.5678 24.2061 93.8111 24.2864 92.0356 24.3525C91.9742 24.3053 91.9317 24.2533 91.8703 24.2061C69.7042 7.57916 19.8186 13.1231 8.74028 29.75C-6.63056 52.8086 3.19639 135.056 8.74028 146.134C14.2794 157.231 30.9064 162.761 36.4503 157.231C41.9942 151.678 36.4503 151.678 30.9111 140.604C26.8972 132.572 28.7106 112.937 32.1153 100.602C32.2475 101.396 32.4364 102.123 32.5875 102.897C34.4292 116.455 41.9989 137.898 41.9989 148.911C41.9989 165.741 51.925 168.305 64.165 168.305C76.4097 168.305 86.3358 165.741 86.3358 148.911C86.3358 147.777 86.2981 146.724 86.2792 145.629C89.8539 145.931 93.5278 146.134 97.4189 146.134C99.7658 146.134 102.033 146.058 104.257 145.95C104.238 146.937 104.195 147.886 104.195 148.911C104.195 165.741 114.126 168.305 126.361 168.305C138.606 168.305 148.532 165.741 148.532 148.911C148.532 140.406 154.161 127.07 158.161 115.94C158.912 114.268 159.535 112.483 160.144 110.665C160.701 116.837 161.056 123.444 161.056 130.527C161.056 131.779 161.553 132.98 162.439 133.866C163.324 134.752 164.525 135.249 165.778 135.249C167.03 135.249 168.231 134.752 169.117 133.866C170.003 132.98 170.5 131.779 170.5 130.527C170.5 106.193 166.859 86.8558 163.195 73.5392Z"
+                                fill="#99AAB5" />
+                            <path
+                                d="M91.875 24.2061C91.875 24.2061 109.111 50.2492 94.9444 73.8603C80.7778 97.4714 57.9317 97.4714 43 97.4714C33.5556 97.4714 38.2778 106.916 43 106.916C49.6772 106.916 82.643 112.634 99.6667 78.5825C113.833 50.2492 91.875 24.2061 91.875 24.2061Z"
+                                fill="#66757F" />
+                            <path
+                                d="M31.1944 73.8603C35.1065 73.8603 38.2778 70.689 38.2778 66.7769C38.2778 62.8649 35.1065 59.6936 31.1944 59.6936C27.2824 59.6936 24.1111 62.8649 24.1111 66.7769C24.1111 70.689 27.2824 73.8603 31.1944 73.8603Z"
+                                fill="#292F33" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_118_385">
+                                <rect width="170" height="170" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <h1 class="notask-text">
+                    There are no tasks<br> at the moment
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <button class="description-btn">?</button>
+    <div class="description"></div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
